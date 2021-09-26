@@ -1,0 +1,156 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  margin: 2rem 1rem;
+  background: #fbf8f3;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+.list {
+  list-style: none;
+}
+
+.btn {
+  border-radius: 5px;
+  border: 0;
+  cursor: pointer;
+  font-weight: 600;
+  margin: 1rem;
+  /* outline: 0; */
+  padding: 1rem;
+  /* text-align: center; */
+  background: #1da1f2;
+  color: white;
+  text-align: center;
+}
+
+.icon {
+  width: 40px;
+  height: 40px;
+}
+
+
+.grid {
+  display: grid;
+}
+
+@media screen and (min-width: 768px) {
+  .grid--1x2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .grid--1x3 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 1rem;
+}
+
+.nav__brand {
+  color: #3180f5;
+  font-style: oblique;
+  font-size: 1.5rem;
+  font-weight: 800;
+}
+
+.nav__list {
+  width: 100%;
+  margin: 0;
+  align-items: center;
+}
+
+.nav__item {
+  padding: 1rem;
+  border-bottom: 1px solid #595959;
+}
+
+.nav__item > a {
+  color: #595959;
+  transition: color 0.3s;
+}
+
+.nav__item > a:hover {
+  color: #000;
+}
+
+.nav__toggler {
+  transition: box-shadow 0.15s;
+  cursor: pointer;
+}
+
+/* .nav.collapsible--expanded .nav__toggler {
+  opacity: 1;
+  box-shadow: 0 0 0 3px #3180f5;
+  border-radius: 5px;
+} */
+
+.collapsible__content {
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: all 0.3s;
+}
+
+.collapsible--expanded .collapsible__content {
+  max-height: 100vh;
+  opacity: 1;
+}
+
+@media screen and (min-width: 768px) {
+  .nav__toggler {
+    display: none;
+  }
+
+  .nav__list {
+    width: auto;
+    display: flex;
+    font-size: 1.6rem;
+    max-height: 100%;
+    opacity: 1;
+  }
+
+  .nav__item {
+    border: 0;
+  }
+}
+
+.hero__image {
+  width: 100%;
+  margin: auto;
+  padding: 2rem 1rem;
+}
+
+.link-arrow {
+  color: #1f7898;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.link-arrow::after {
+  content: "-->";
+  margin-left: 5px;
+  transition: margin 0.15s;
+}
+
+.link-arrow:hover::after {
+  margin-left: 10px;
+}

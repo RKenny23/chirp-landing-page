@@ -5,31 +5,61 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Chirp</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
   </head>
-  <div>Chirp.</div>
-  <header>
-    <nav>
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Pricing</a></li>
-        <li><a href="#">FAQ</a></li>
-        <button>Sign in with Twitter</button>
-      </ul>
-    </nav>
-  </header>
   <body>
+    <header>
+      <nav class="nav collapsible">
+        <a class="nav__brand" href="/">Chirp.</a>
+        <svg class="icon nav__toggler">
+          <use xlink:href="images/sprite.svg#Hamburger Menu"></use>
+        </svg>
+        <ul class="list nav__list collapsible__content">
+          <li class="nav__item"><a href="#">Home</a></li>
+          <li class="nav__item"><a href="#">Pricing</a></li>
+          <li class="nav__item"><a href="#">FAQ</a></li>
+          <button class="btn">
+            <img src="images/Twitter.svg" alt="" /> Sign in with Twitter
+          </button>       
+      </nav>
+    </header>
     <section>
-      <div>
-        <h1>Twitter analytics taken to a whole new level.</h1>
-        <p>
-          Chirp is a suite of Twitter analytics that will help you better
-          understand your audience, which tweets they like, and most
-          importantly, when they are the most active on Twitter.
-        </p>
-        <button>Sign in with Twitter</button>
-        <a href="#">Learn more</a>
+      <div class="container grid grid--1x2">
+        <div>
+          <img
+            class="hero__image"
+            src="images/Hero Image (Desktop View).png"
+            alt=""
+          />
+        </div>
+        <div>
+          <h1>Twitter analytics taken to a whole new level.</h1>
+          <p>
+            Chirp is a suite of Twitter analytics that will help you better
+            understand your audience, which tweets they like, and most
+            importantly, when they are the most active on Twitter.
+          </p>
+          <button class="btn">
+            <img src="images/Twitter.svg" alt="" /> Sign in with Twitter
+          </button>
+          <a class="link-arrow" href="#">Learn more</a>
+          <img src="images/userAvatar01.svg" alt="">
+          <img src="images/userAvatar02.svg" alt="">
+          <img src="images/userAvatar03.svg" alt="">
+          <img src="images/userAvatar04.svg" alt="">
+          <img src="images/userAvatar05.svg" alt="">
+          <img src="images/userAvatar06.svg" alt="">
+          <img src="images/userAvatar07.svg" alt="">
+          <img src="images/userAvatar08.svg" alt="">
+          <img src="images/userAvatar09.svg" alt="">
+        </div>
       </div>
-      <img src="" alt="" />
     </section>
     <section>
       <h2>Features that help you Tweet smart.</h2>
@@ -72,5 +102,6 @@
         </div>
       </div>
     </section>
+    <script src="main.js"></script>
   </body>
 </html>
