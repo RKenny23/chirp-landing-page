@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Chirp</title>
+    <link rel="stylesheet" href="normalize.css" />
     <link rel="stylesheet" href="styles.css" />
-    <!-- <link rel="stylesheet" href="normalize.css"> -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -33,80 +33,83 @@
       </nav>
     </header>
     <section>
-      <div class="container">
-          <img
-            class="hero__image"
-            src="images/Hero Image (Desktop View).png"
-            alt=""
-          />
-        <h1 class="block__header">
-          Twitter analytics taken to a whole new level.
-        </h1>
-        <p>
-          Chirp is a suite of Twitter analytics that will help you better
-          understand your audience, which tweets they like, and most
-          importantly, when they are the most active on Twitter.
-        </p>
-        <button class="btn hero__button">
-          <img class="twitter__icon" src="images/Twitter.svg" alt="" /> Sign
-          in with Twitter
-        </button>
-        <a class="link-arrow" href="#">Learn more</a>
-        <div class="container">
-          <img src="images/userAvatar01.svg" alt="" />
-          <img src="images/userAvatar02.svg" alt="" />
-          <img src="images/userAvatar03.svg" alt="" />
-          <img src="images/userAvatar04.svg" alt="" />
-          <img src="images/userAvatar05.svg" alt="" />
-          <img src="images/userAvatar06.svg" alt="" />
-          <img src="images/userAvatar07.svg" alt="" />
-          <img src="images/userAvatar08.svg" alt="" />
-          <img src="images/userAvatar09.svg" alt="" />
+      <div class="container grid grid--1x2">
+        <img
+          class="hero__image"
+          src="images/Hero Image (Desktop View).png"
+          alt=""
+        />
+        <div class="features__text">
+          <h1>Twitter analytics taken to a whole new level.</h1>
+          <p>
+            Chirp is a suite of Twitter analytics that will help you better
+            understand your audience, which tweets they like, and most
+            importantly, when they are the most active on Twitter.
+          </p>
+          <button class="btn hero__button">
+            <img class="twitter__icon" src="images/Twitter.svg" alt="" /> Sign in
+            with Twitter
+          </button>
+          <a class="link-arrow" href="#">Learn more</a>
+          <div class="image__stack">
+            <div><img src="images/userAvatar01.svg" alt="" /></div>
+            <div><img src="images/userAvatar02.svg" alt="" /></div>
+            <div><img src="images/userAvatar03.svg" alt="" /></div>
+            <div><img src="images/userAvatar04.svg" alt="" /></div>
+            <div><img src="images/userAvatar05.svg" alt="" /></div>
+            <div><img src="images/userAvatar06.svg" alt="" /></div>
+            <div><img src="images/userAvatar07.svg" alt="" /></div>
+            <div><img src="images/userAvatar08.svg" alt="" /></div>
+            <div><img src="images/userAvatar09.svg" alt="" /></div>
+          </div>
+          <p>
+            Join <span id="bold-color">195</span> others who have analyzed their
+            followers and scheduled <span id="bold-color">1342</span>
+            tweets!
+          </p>
         </div>
-        <p>
-          Join 195 others who have analyzed their followers and scheduled 1342
-          tweets!
-        </p>
       </div>
     </section>
     <section>
-      <h2>Features that help you Tweet smart.</h2>
-      <div>
-        <div>
-          <img src="" alt="" />
-          <p>Analytics</p>
-          <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-            Exercitationem, expedita quam dolor deleniti labore doloribus quasi
-            porro et laborum veniam.
-          </p>
-        </div>
-        <div>
-          <img src="" alt="" />
-          <p>Analytics</p>
-          <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-            Exercitationem, expedita quam dolor deleniti labore doloribus quasi
-            porro et laborum veniam.
-          </p>
-        </div>
-        <div>
-          <img src="" alt="" />
-          <p>Analytics</p>
-          <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-            Exercitationem, expedita quam dolor deleniti labore doloribus quasi
-            porro et laborum veniam.
-          </p>
-        </div>
-        <div>
-          <img src="" alt="" />
-          <p>Analytics</p>
-          <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-            Exercitationem, expedita quam dolor deleniti labore doloribus quasi
-            porro et laborum veniam.
-          </p>
+      <div class="block--white">
+        <div class="container features__grid">
+          <h1>Features that help you Tweet smarter.</h1>
+          <div class="grid__item">
+            <img class="icon" src="images/Like.svg" alt="" />
+            <h2>Analytics</h2>
+            <p>
+              We constantly monittor your audience as it grows — so you can
+              Tweet when your folowers are most likely to be online and ready to
+              engage with your content.
+            </p>
+          </div>
+          <div class="grid__item">
+            <img class="icon" src="images/Like.svg" alt="" />
+            <h2>Smart Analyzer</h2>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Exercitationem, expedita quam dolor deleniti labore doloribus
+              quasi porro et laborum veniam.
+            </p>
+          </div>
+          <div class="grid__item">
+            <img class="icon" src="images/Like.svg" alt="" />
+            <h2>Scheduled Your Tweets</h2>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Exercitationem, expedita quam dolor deleniti labore doloribus
+              quasi porro et laborum veniam.
+            </p>
+          </div>
+          <div class="grid__item">
+            <img class="icon" src="images/Like.svg" alt="" />
+            <h2>Dark Mode</h2>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Exercitationem, expedita quam dolor deleniti labore doloribus
+              quasi porro et laborum veniam.
+            </p>
+          </div>
         </div>
       </div>
     </section>
