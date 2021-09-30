@@ -14,7 +14,7 @@ a {
 }
 
 li {
-  list-style: none;
+  /* list-style: none; */
 }
 
 h1 {
@@ -53,6 +53,7 @@ p {
 .nav__list {
   width: 100%;
   text-align: center;
+  list-style: none;
 }
 
 .nav__item {
@@ -199,7 +200,7 @@ p {
 .block--blue {
   display: block;
   background: #d7f5f5;
-  height: 1000px;
+  height: 1160px;
   /* margin-top: 3rem; */
 }
 
@@ -294,6 +295,85 @@ p {
   margin-left: auto;
   margin-top: 5px;
 }
+
+.plan__card {
+  width: 86.5%;
+  min-width: 330px;
+  margin: auto;
+  background: #fbf8f3;
+  border: 1px solid orange;
+  border-radius: 5px;
+  padding: 1rem;
+  margin-top: 3rem;
+}
+
+#pricing h1 {
+  text-align: center;
+}
+
+#pricing .block--white {
+  margin: 0;
+}
+
+#pricing .features__heading {
+  margin: 0 auto;
+  padding-bottom: 1rem;
+}
+
+#pricing p {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+}
+
+.plan__name {
+  justify-content: left;
+  font-weight: 400;
+  color: #737373;
+  margin-bottom: 0.5rem;
+  margin-top: 1rem;
+  margin-left: 1rem;
+}
+
+.plan__price {
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin-left: 1rem;;
+}
+
+.plan__billing-cycle {
+  color: #737373;
+  margin-left: -0.2rem;
+  font-size: 1.2rem;
+}
+
+.card__body {
+  border-top: 1px solid rgba(115, 115, 115, 0.2);
+  border-bottom: 1px solid rgba(115, 115, 115, 0.2);
+  margin: 1rem 1.1rem;
+  padding: 1rem 0;
+  padding-bottom: 0;
+  margin-bottom: 1.5rem;
+}
+
+.plan__list {
+  line-height: 2rem;
+  color: #737373;
+}
+
+.list__item {
+  background: url('images/Checkmark.svg') no-repeat 0 3px;
+  padding-left: 2rem;
+  margin-bottom: 1rem;
+  list-style: none;
+}
+
+.card__button {
+  font-size: 1.2rem;
+  width: 100%;
+  margin: auto;
+}
+
 
 @media screen and (min-width: 800px) {
 
@@ -395,6 +475,29 @@ p {
     grid-template-rows: repeat(2, 1fr);
     grid-row-start: 2;
   }
+
+  .quotes__heading {
+    width: 80%;
+    margin: auto;
+    padding-top: 5rem;
+  }
+
+  .quotes__grid {
+    flex-direction: row;
+    width: 80%;
+    margin: auto;
+    justify-content: space-evenly;
+    /* grid-auto-rows: auto; */
+  }
+
+  .tweet__card {
+    margin: 0;
+    max-width: 25vw;
+  }
+
+  /* .grid--1x3 {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  } */
 
 }
 
